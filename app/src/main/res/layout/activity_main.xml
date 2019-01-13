@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.zhengyuan.imageload.MainActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/id_main_sdv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        fresco:roundBottomLeft="true"
+        fresco:roundBottomRight="true"
+        fresco:roundTopLeft="true"
+        fresco:roundTopRight="true"
+        fresco:roundedCornerRadius="20dp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/drawee_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        fresco:roundAsCircle="true"
+        fresco:roundedCornerRadius="20dp" />
+
+    <com.zhengyuan.imageload.CircleImageView
+        android:id="@+id/image1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image" />
+
+    <com.zhengyuan.imageload.RoundRectImageView
+        android:id="@+id/roundRectImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/image" />
+
+</LinearLayout>
