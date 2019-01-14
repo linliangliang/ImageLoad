@@ -20,25 +20,26 @@ import android.support.v7.widget.AppCompatImageView;
 /**
  * Created by 林亮 on 2019/1/13
  */
-
+//自定义组件，圆角图片
 public class RoundRectImageView extends AppCompatImageView {
     private Paint paint;
 
     public RoundRectImageView(Context context) {
-        this(context,null);
+        this(context, null);
     }
 
     public RoundRectImageView(Context context, AttributeSet attrs) {
-        this(context, attrs,0);
+        this(context, attrs, 0);
     }
 
     public RoundRectImageView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        paint  = new Paint();
+        paint = new Paint();
     }
 
     /**
      * 绘制圆角矩形图片
+     *
      * @author caizhiming
      */
     @Override
@@ -49,7 +50,7 @@ public class RoundRectImageView extends AppCompatImageView {
             Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
             Bitmap b = getRoundBitmap(bitmap, 20);
             final Rect rectSrc = new Rect(0, 0, b.getWidth(), b.getHeight());
-            final Rect rectDest = new Rect(0,0,getWidth(),getHeight());
+            final Rect rectDest = new Rect(0, 0, getWidth(), getHeight());
             paint.reset();
             canvas.drawBitmap(b, rectSrc, rectDest, paint);
 
@@ -60,6 +61,7 @@ public class RoundRectImageView extends AppCompatImageView {
 
     /**
      * 获取圆角矩形图片方法
+     *
      * @param bitmap
      * @param roundPx,圆角的弧度
      * @return Bitmap

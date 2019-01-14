@@ -40,4 +40,16 @@
         android:layout_centerInParent="true"
         android:src="@drawable/image" />
 
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/image" />
+
+    <ImageView
+        android:id="@+id/img5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/image" />
+
 </LinearLayout>

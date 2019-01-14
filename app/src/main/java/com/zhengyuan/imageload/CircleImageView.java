@@ -16,7 +16,7 @@ import android.support.v7.widget.AppCompatImageView;
 /**
  * Created by 林亮 on 2019/1/13
  */
-
+//自定义组件，圆形图片
 public class CircleImageView extends AppCompatImageView {
     private float width;
     private float height;
